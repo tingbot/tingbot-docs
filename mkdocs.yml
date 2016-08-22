@@ -1,0 +1,19 @@
+site_name: Tingbot Docs
+repo_url: https://github.com/tingbot/tingbot-docs/
+theme: readthedocs
+pages:
+- Home: 'index.md'
+- User Guide:
+    - 'Setting up Tingbot': 'guides/setup.md'
+    - 'Writing your first app': 'guides/first-app.md'
+    - 'Touch and buttons': 'guides/touch-buttons.md'
+    - 'Consuming web APIs': 'guides/web-apis.md'
+    - 'Using Python modules': 'guides/python-modules.md'
+    - 'Publishing to Tingbot Ocean': 'guides/publish-to-ocean.md'
+- Examples:
+    - 'Tingbot Ocean': 'links/ocean.md'
+- Reference:
+    - 'tingbot-python': 'links/tingbot-python-docs.md'
+    - 'Tide': 'reference/tide.md'
+    - 'The tingapp format': 'reference/tingapp-format.md'
+    - 'Tingbot OS': 'reference/tingbot-os.md'
