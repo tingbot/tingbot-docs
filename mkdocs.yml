@@ -1,6 +1,7 @@
 site_name: Tingbot Docs
 repo_url: https://github.com/tingbot/tingbot-docs/
 theme: readthedocs
+extra_css: [extra.css]
 pages:
 - Home: 'index.md'
 - User Guide:
