@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Writing your first app - Tingbot Docs</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Writing your first app";
+    var mkdocs_page_input_path = "guides/first-app.md";
+    var mkdocs_page_url = "/guides/first-app/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tingbot Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/tide/">Tide</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>User Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../setup/">Setting up Tingbot</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Writing your first app</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#getting-started">Getting started</a></li>
+                
+                    <li><a class="toctree-l4" href="#a-clean-slate">A clean slate</a></li>
+                
+                    <li><a class="toctree-l4" href="#make-a-change">Make a change</a></li>
+                
+                    <li><a class="toctree-l4" href="#your-first-app-a-digital-clock">Your first app - a digital clock</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../touch-buttons/">Touch and buttons</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../web-apis/">Consuming web APIs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python-modules/">Using Python modules</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../publish-to-ocean/">Publishing to Tingbot Ocean</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/tingbot-python-docs/">tingbot-python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/tingapp-format/">The tingapp format</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/tingbot-os/">Tingbot OS</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Links</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/forum/">Forum</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/ocean/">Tingbot Ocean</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/github/">Github</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/shop/">The Tingbot Shop</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tingbot Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>Writing your first app</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/tingbot/tingbot-docs/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="getting-started">Getting started</h1>
+<h2 id="a-clean-slate">A clean slate</h2>
+<p>Open up Tide and choose File -&gt; New.</p>
+<p>You'll be presented with the app template, which looks like this:</p>
+<pre><code>import tingbot
+from tingbot import *
+
+# setup code here
+
+def loop():
+    # drawing code here
+    screen.fill(color='black')
+    screen.text('Hello world!')
+
+# run the app
+tingbot.run(loop)
+</code></pre>
+<p>This program just writes 'Hello world' to the screen. Try running it!
+Click the Run button in the top left of the Tide window to run this code
+in the simulator. It'll look like this:</p>
+<p><img alt="image" src="../images/simulator-hello-world.png" /></p>
+<p>This program consists of a few parts-</p>
+<h3 id="import">Import</h3>
+<pre><code>import tingbot
+from tingbot import *
+</code></pre>
+<p>At the start, we <em>import</em> some functionality into the program. Here,
+we're importing everything from the tingbot libraries, so we can use
+<code>screen</code> to draw things to the screen. There are lots of things you can
+import, like <code>import requests</code> for getting data from the internet, or
+<code>import time</code> to access the system clock.</p>
+<h3 id="setup">Setup</h3>
+<pre><code># setup code here
+</code></pre>
+<p>This part contains code that runs when your app starts. For this app,
+there's no setup required, so there's just a comment.</p>
+<blockquote>
+<p><strong>note</strong></p>
+<p>Comments begin with <code>#</code>, are used as notes-to-self, or notes to others
+reading this program, and have no effect on how the program runs.</p>
+</blockquote>
+<h3 id="loop">Loop</h3>
+<pre><code>def loop():
+    # drawing code here
+    screen.fill(color='black')
+    screen.text('Hello world!')
+</code></pre>
+<p>In this function, <code>loop()</code>, we draw to the screen. This function is run
+repeatedly while your program is running.</p>
+<blockquote>
+<p><strong>note</strong></p>
+<p>Functions are little bits of code that can be 'called' (meaning run)
+repeatedly from different parts of the program. This loop function is
+given to the tingbot.run() to draw the screen.</p>
+</blockquote>
+<h3 id="run">Run</h3>
+<pre><code>tingbot.run(loop)
+</code></pre>
+<p>Finally we run the program. This line causes the <code>loop()</code> function to be
+called over and over, drawing to the screen.</p>
+<h2 id="make-a-change">Make a change</h2>
+<p>Let's try making a change to our app. We can change the colors using the
+color parameter.</p>
+<pre><code>import tingbot
+from tingbot import *
+
+# setup code here
+
+def loop():
+    # drawing code here
+    screen.fill(color='white')
+    screen.text('Hello world!', color='blue')
+
+# run the app
+tingbot.run(loop)
+</code></pre>
+<h2 id="your-first-app-a-digital-clock">Your first app - a digital clock</h2>
+<p>For this app we're going to import some functionality from the Python
+<a href="https://docs.python.org/2/library/time.html">time</a> module.</p>
+<pre><code>import tingbot
+from tingbot import *
+import time
+
+def loop():
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+
+    screen.fill(
+        color='black'
+    )
+    screen.text(
+        current_time, 
+        color='white'
+    )
+
+tingbot.run(loop)
+</code></pre>
+<p>A few things have changed in the above- we've removed the comments and
+split the <code>fill</code> and <code>text</code> calls to multiple lines. This is just to
+make it easier to read.</p>
+<p>We've also added a call to <code>time.strftime</code>.</p>
+<blockquote>
+<p><strong>tip</strong></p>
+<p>Wondering where we got <code>time.strftime</code> from? The module <code>time</code> is part
+of Python, so it's always available, and you can learn about it from
+the <a href="https://docs.python.org/2/library/index.html">Python docs</a>.</p>
+<p>We found it by Googling '<a href="https://google.com/search?q=current+time+python">current time
+python</a>' and checking
+the first search result!</p>
+</blockquote>
+<p>So now instead of writing 'Hello world' to the screen, we're writing the
+current time. It looks like this:</p>
+<p><img alt="image" src="../images/simulator-time.png" /></p>
+<p>We're getting there!</p>
+<blockquote>
+<p><strong>note</strong></p>
+<p>Wondering what the <code>current_time</code> is? It's a <em>variable</em>. Variables are
+a way to carry data around in a program. So on the line
+<code>current_time = time.strftime("%Y-%m-%d %H:%M:%S")</code> we created and set
+the variable, and we used it in the <code>screen.text</code> call.</p>
+</blockquote>
+<p>Let's just adjust the formatting.</p>
+<pre><code>import tingbot
+from tingbot import *
+import time
+
+def loop():
+    current_date = time.strftime("%d %B %Y")
+    current_time = time.strftime("%H:%M:%S")
+
+    screen.fill(
+        color='black'
+    )
+    screen.text(
+        current_time, 
+        xy=(160, 110),
+        color='white',
+        font_size=50,
+    )
+    screen.text(
+        current_date,
+        xy=(160, 180),
+        color='white',
+        font_size=24,
+    )
+
+tingbot.run(loop)
+</code></pre>
+<p><img alt="image" src="../images/simulator-live.gif" /></p>
+<p>Not bad for 25 lines!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../touch-buttons/" class="btn btn-neutral float-right" title="Touch and buttons">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../setup/" class="btn btn-neutral" title="Setting up Tingbot"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/tingbot/tingbot-docs/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../setup/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../touch-buttons/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Setting up Tingbot - Tingbot Docs</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Setting up Tingbot";
+    var mkdocs_page_input_path = "guides/setup.md";
+    var mkdocs_page_url = "/guides/setup/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tingbot Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/tide/">Tide</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>User Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Setting up Tingbot</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#installing-tingbot-os">Installing Tingbot OS</a></li>
+                
+                    <li><a class="toctree-l4" href="#download-tingbot-os">Download Tingbot OS</a></li>
+                
+                    <li><a class="toctree-l4" href="#download-and-install-etcher">Download and Install Etcher</a></li>
+                
+                    <li><a class="toctree-l4" href="#use-etcher-to-burn-the-tingbot-os-disk-image">Use Etcher to burn the Tingbot OS disk image</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#installing-tide">Installing Tide</a></li>
+                
+                    <li><a class="toctree-l4" href="#tides-up">Tide's up!</a></li>
+                
+                    <li><a class="toctree-l4" href="#setting-up-wifi">Setting up Wifi</a></li>
+                
+                    <li><a class="toctree-l4" href="#time-to-get-coding">Time to get coding!</a></li>
+                
+                    <li><a class="toctree-l4" href="#using-tide">Using Tide</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../first-app/">Writing your first app</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../touch-buttons/">Touch and buttons</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../web-apis/">Consuming web APIs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python-modules/">Using Python modules</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../publish-to-ocean/">Publishing to Tingbot Ocean</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/tingbot-python-docs/">tingbot-python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/tingapp-format/">The tingapp format</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/tingbot-os/">Tingbot OS</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Links</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/forum/">Forum</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/ocean/">Tingbot Ocean</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/github/">Github</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../links/shop/">The Tingbot Shop</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tingbot Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>Setting up Tingbot</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/tingbot/tingbot-docs/" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="introduction">Introduction</h1>
+<p>Your Tingbot is assembled and ready to go.</p>
+<p>During this guide we'll:</p>
+<ul>
+<li>Install Tingbot OS on the Tingbot's SD card</li>
+<li>Install the Tide application (Tingbot's integrated development environment) on your computer</li>
+<li>Get your new Tingbot online</li>
+<li>Test and install the "Hello World" app</li>
+</ul>
+<h1 id="installing-tingbot-os">Installing Tingbot OS</h1>
+<h2 id="download-tingbot-os">Download Tingbot OS</h2>
+<p>Visit <a href="http://github.com/tingbot/tingbot-os/releases/latest">the Tingbot OS releases page</a> to download the Tingbot <strong>disk.img.zip</strong> and then expand it to <strong>disk.img</strong>. On the Mac the result will look like:</p>
+<p><img alt="image" src="../images/TingbotGuide009.png" /></p>
+<p>We recommend the use of a micro SD card of 8GB or more. As there are a number of ways of writing the Tingbot OS image to the SD card we can’t cover all options. However, the easiest way we have found to prepare the SD card is to use Etcher by Resin.io and we recommend this approach and document it below.</p>
+<h2 id="download-and-install-etcher">Download and Install Etcher</h2>
+<p>Visit www.etcher.io and download Etcher from there. Here's a screenshot of the home page and as you can see it has detected the Apple Mac that's being used to write and screenshot this tutorial.</p>
+<p><img alt="image" src="../images/TingbotGuide001.png" /></p>
+<h2 id="use-etcher-to-burn-the-tingbot-os-disk-image">Use Etcher to burn the Tingbot OS disk image</h2>
+<p>Once Etcher has been installed it can be used to burn the Tingbot OS image to the micro SD card. As follows.</p>
+<h3 id="select-the-tingbot-os-image">Select the Tingbot OS image</h3>
+<p><img alt="image" src="../images/TingbotGuide012.png" /></p>
+<h3 id="select-the-drive-image">Select the Drive image</h3>
+<p><img alt="image" src="../images/TingbotGuide013.png" /></p>
+<blockquote>
+<p><strong>Aside:</strong>
+The above screenshot shows the selection of the Mac's drive that corresponds to the in-built SD card slot that has had the micro SD card inserted (in its SD card adapter). Please make sure on your own machine that the correct drive is selected!</p>
+</blockquote>
+<h3 id="flash-the-image">Flash the image</h3>
+<p>The time it will take to flash the 1.5GB image will depend on the speed of the micro SD card. Etcher provides a handy ETA to completion!</p>
+<p><img alt="image" src="../images/TingbotGuide014.png" /></p>
+<h3 id="flash-complete">Flash complete!</h3>
+<p><img alt="image" src="../images/TingbotGuide015.png" /></p>
+<blockquote>
+<p><strong>Aside:</strong>
+The CRC32 checksum in the above image is likely to be different to the one reported for the final release version.</p>
+</blockquote>
+<h1 id="installing-tide">Installing Tide</h1>
+<p>Now it's time to download and install the Tide application. Visit https://tide-download.tingbot.com</p>
+<h3 id="tides-up">Tide's up!</h3>
+<p>When invoked Tide starts up with an untitled - hello world - template program file. You can find out more about this in the 'Writing your first app' section.
+<img alt="image" src="../images/TingbotGuide023.png" /></p>
+<h3 id="setting-up-wifi">Setting up Wifi</h3>
+<p>Configuring the WiFi settings on the Tide OS SD card is the next step. To make this as simple as possible the Tide application has a special Tingbot WiFi Settings... menu item. For instance in the Mac UI this is in the Tide menu:</p>
+<p><img alt="image" src="../images/TingbotGuide024.png" /></p>
+<blockquote>
+<p><strong>Aside:</strong>
+If the Tingbot OS SD card isn't inserted you may get the following prompt:
+<img alt="image" src="../images/TingbotGuide045.png" /></p>
+</blockquote>
+<p>Now enter the SSID name and password in the pop-up window:
+<img alt="image" src="../images/TingbotGuide048.png" /></p>
+<p>and when saved to the SD card the following confirmation will be given:
+<img alt="image" src="../images/TingbotGuide046.png" /></p>
+<h3 id="time-to-get-coding">Time to get coding!</h3>
+<p>It's now time to get coding so please now eject the Tingbot OS SD card, insert the micro SD card into the Tingbot and plug in the Tingbot power supply. As this is the first time the SD card has been used the Tingbot it will go through a partial boot up sequence to expand the image to the full capacity of the SD card. Once the image has been expanded the Tingbot will automatically reboot - this time into Springboard - the Tingbot's UI.</p>
+<h2 id="using-tide">Using Tide</h2>
+<h3 id="save-as-and-run">Save as... (and Run)</h3>
+<p>The first thing to do is to use File -&gt; Save As... (or File -&gt; Save) to save the Untitled template Tingbot application as, say, a file named hello.tingapp. Now 'Run' the program in the Tingbot simulator and the simulated Tingbot will pop up!
+<img alt="image" src="../images/TingbotGuide065.png" /></p>
+<h3 id="the-real-ting">The real ting!</h3>
+<p>At this point we're sure that you'd like to run the app on the actual Tingbot. Nothing could be simpler! If your Tingbot is booted up then it should be showing the first screen of Springboard. If so all is well. If not, please check back over the previous instructions. If the Tingbot has been able to connect to WiFi then the Tide application should have detected it and the Tingbot's local IP address will appear in the top right hand menu. For instance:<br />
+<img alt="image" src="../images/TingbotGuide059.png" /></p>
+<p>Now select the real Tingbot rather than the simulator and once this is done notice that the Download button is now activated. Clicking on this button will cause hello.tingapp to be downloaded to the Tingbot. 
+<img alt="image" src="../images/TingbotGuide062.png" /></p>
+<blockquote>
+<p><strong>Aside:</strong>
+Scrolling through Springboard will show the newly installed application as 'Untitled' but we'll explain why later.
+If you have scrolled to Untitled you can start it by tapping its screen icon.</p>
+</blockquote>
+<p>When developing code it is often more convenient to wrap the download and run into one step. That's what the Run button achieves and clicking on this will download the app and start it running on the Tingbot. The following screenshot shows this. Note that the button icon changes from 'play' to 'stop' when the app has been started by this method:
+<img alt="image" src="../images/TingbotGuide063.png" /></p>
+<h3 id="one-last-ting">One last Ting!</h3>
+<p>The reason that the Hello app shows up in Springboard as 'Untitled' is because the app.tbinfo has not been updated by the programmer. The first screenshot below shows the default app.tbinfo settings (and active 'Stop' button) and the second screenshot shows an updated app.tbinfo (and active 'Play' and 'Download' buttons showing that the app has been stopped in preparation for an update and re-run).
+<img alt="image" src="../images/TingbotGuide066.png" />
+<img alt="image" src="../images/TingbotGuide067.png" /></p>
+<p>Now it's time to explain the process of writing your first Tingbot app. This comes next!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../first-app/" class="btn btn-neutral float-right" title="Writing your first app">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../reference/tide/" class="btn btn-neutral" title="Tide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/tingbot/tingbot-docs/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../reference/tide/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../first-app/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

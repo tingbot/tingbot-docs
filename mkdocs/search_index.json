@@ -1,0 +1,269 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to the Tingbot documentation\n\n\n// TODO: graphic, friendly greeting and links to most used pages\n\n\n// get in touch!\n\n\n// forum\n//    help questions\n// slack\n//    chat and get involved with the development\n// github issue tracker\n//    Found a bug in our software? post here\n//      - tingbot-python\n//      - tide-electron\n//      - tingbot-os", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-the-tingbot-documentation", 
+            "text": "// TODO: graphic, friendly greeting and links to most used pages  // get in touch!  // forum\n//    help questions\n// slack\n//    chat and get involved with the development\n// github issue tracker\n//    Found a bug in our software? post here\n//      - tingbot-python\n//      - tide-electron\n//      - tingbot-os", 
+            "title": "Welcome to the Tingbot documentation"
+        }, 
+        {
+            "location": "/reference/tide/", 
+            "text": "// TODO: A Tide download/help page.\n// download links\n// how to install\n// links to github to get involved", 
+            "title": "Tide"
+        }, 
+        {
+            "location": "/guides/setup/", 
+            "text": "Introduction\n\n\nYour Tingbot is assembled and ready to go.\n\n\nDuring this guide we'll:\n\n\n\n\nInstall Tingbot OS on the Tingbot's SD card\n\n\nInstall the Tide application (Tingbot's integrated development environment) on your computer\n\n\nGet your new Tingbot online\n\n\nTest and install the \"Hello World\" app\n\n\n\n\nInstalling Tingbot OS\n\n\nDownload Tingbot OS\n\n\nVisit \nthe Tingbot OS releases page\n to download the Tingbot \ndisk.img.zip\n and then expand it to \ndisk.img\n. On the Mac the result will look like:\n\n\n\n\nWe recommend the use of a micro SD card of 8GB or more. As there are a number of ways of writing the Tingbot OS image to the SD card we can\u2019t cover all options. However, the easiest way we have found to prepare the SD card is to use Etcher by Resin.io and we recommend this approach and document it below.\n\n\nDownload and Install Etcher\n\n\nVisit www.etcher.io and download Etcher from there. Here's a screenshot of the home page and as you can see it has detected the Apple Mac that's being used to write and screenshot this tutorial.\n\n\n\n\nUse Etcher to burn the Tingbot OS disk image\n\n\nOnce Etcher has been installed it can be used to burn the Tingbot OS image to the micro SD card. As follows.\n\n\nSelect the Tingbot OS image\n\n\n\n\nSelect the Drive image\n\n\n\n\n\n\nAside:\n\nThe above screenshot shows the selection of the Mac's drive that corresponds to the in-built SD card slot that has had the micro SD card inserted (in its SD card adapter). Please make sure on your own machine that the correct drive is selected!\n\n\n\n\nFlash the image\n\n\nThe time it will take to flash the 1.5GB image will depend on the speed of the micro SD card. Etcher provides a handy ETA to completion!\n\n\n\n\nFlash complete!\n\n\n\n\n\n\nAside:\n\nThe CRC32 checksum in the above image is likely to be different to the one reported for the final release version.\n\n\n\n\nInstalling Tide\n\n\nNow it's time to download and install the Tide application. Visit https://tide-download.tingbot.com\n\n\nTide's up!\n\n\nWhen invoked Tide starts up with an untitled - hello world - template program file. You can find out more about this in the 'Writing your first app' section.\n\n\n\nSetting up Wifi\n\n\nConfiguring the WiFi settings on the Tide OS SD card is the next step. To make this as simple as possible the Tide application has a special Tingbot WiFi Settings... menu item. For instance in the Mac UI this is in the Tide menu:\n\n\n\n\n\n\nAside:\n\nIf the Tingbot OS SD card isn't inserted you may get the following prompt:\n\n\n\n\n\nNow enter the SSID name and password in the pop-up window:\n\n\n\nand when saved to the SD card the following confirmation will be given:\n\n\n\nTime to get coding!\n\n\nIt's now time to get coding so please now eject the Tingbot OS SD card, insert the micro SD card into the Tingbot and plug in the Tingbot power supply. As this is the first time the SD card has been used the Tingbot it will go through a partial boot up sequence to expand the image to the full capacity of the SD card. Once the image has been expanded the Tingbot will automatically reboot - this time into Springboard - the Tingbot's UI.\n\n\nUsing Tide\n\n\nSave as... (and Run)\n\n\nThe first thing to do is to use File -\n Save As... (or File -\n Save) to save the Untitled template Tingbot application as, say, a file named hello.tingapp. Now 'Run' the program in the Tingbot simulator and the simulated Tingbot will pop up!\n\n\n\nThe real ting!\n\n\nAt this point we're sure that you'd like to run the app on the actual Tingbot. Nothing could be simpler! If your Tingbot is booted up then it should be showing the first screen of Springboard. If so all is well. If not, please check back over the previous instructions. If the Tingbot has been able to connect to WiFi then the Tide application should have detected it and the Tingbot's local IP address will appear in the top right hand menu. For instance:\n\n\n\n\nNow select the real Tingbot rather than the simulator and once this is done notice that the Download button is now activated. Clicking on this button will cause hello.tingapp to be downloaded to the Tingbot. \n\n\n\n\n\nAside:\n\nScrolling through Springboard will show the newly installed application as 'Untitled' but we'll explain why later.\nIf you have scrolled to Untitled you can start it by tapping its screen icon.\n\n\n\n\nWhen developing code it is often more convenient to wrap the download and run into one step. That's what the Run button achieves and clicking on this will download the app and start it running on the Tingbot. The following screenshot shows this. Note that the button icon changes from 'play' to 'stop' when the app has been started by this method:\n\n\n\nOne last Ting!\n\n\nThe reason that the Hello app shows up in Springboard as 'Untitled' is because the app.tbinfo has not been updated by the programmer. The first screenshot below shows the default app.tbinfo settings (and active 'Stop' button) and the second screenshot shows an updated app.tbinfo (and active 'Play' and 'Download' buttons showing that the app has been stopped in preparation for an update and re-run).\n\n\n\n\n\nNow it's time to explain the process of writing your first Tingbot app. This comes next!", 
+            "title": "Setting up Tingbot"
+        }, 
+        {
+            "location": "/guides/setup/#introduction", 
+            "text": "Your Tingbot is assembled and ready to go.  During this guide we'll:   Install Tingbot OS on the Tingbot's SD card  Install the Tide application (Tingbot's integrated development environment) on your computer  Get your new Tingbot online  Test and install the \"Hello World\" app", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/guides/setup/#installing-tingbot-os", 
+            "text": "", 
+            "title": "Installing Tingbot OS"
+        }, 
+        {
+            "location": "/guides/setup/#download-tingbot-os", 
+            "text": "Visit  the Tingbot OS releases page  to download the Tingbot  disk.img.zip  and then expand it to  disk.img . On the Mac the result will look like:   We recommend the use of a micro SD card of 8GB or more. As there are a number of ways of writing the Tingbot OS image to the SD card we can\u2019t cover all options. However, the easiest way we have found to prepare the SD card is to use Etcher by Resin.io and we recommend this approach and document it below.", 
+            "title": "Download Tingbot OS"
+        }, 
+        {
+            "location": "/guides/setup/#download-and-install-etcher", 
+            "text": "Visit www.etcher.io and download Etcher from there. Here's a screenshot of the home page and as you can see it has detected the Apple Mac that's being used to write and screenshot this tutorial.", 
+            "title": "Download and Install Etcher"
+        }, 
+        {
+            "location": "/guides/setup/#use-etcher-to-burn-the-tingbot-os-disk-image", 
+            "text": "Once Etcher has been installed it can be used to burn the Tingbot OS image to the micro SD card. As follows.", 
+            "title": "Use Etcher to burn the Tingbot OS disk image"
+        }, 
+        {
+            "location": "/guides/setup/#select-the-tingbot-os-image", 
+            "text": "", 
+            "title": "Select the Tingbot OS image"
+        }, 
+        {
+            "location": "/guides/setup/#select-the-drive-image", 
+            "text": "Aside: \nThe above screenshot shows the selection of the Mac's drive that corresponds to the in-built SD card slot that has had the micro SD card inserted (in its SD card adapter). Please make sure on your own machine that the correct drive is selected!", 
+            "title": "Select the Drive image"
+        }, 
+        {
+            "location": "/guides/setup/#flash-the-image", 
+            "text": "The time it will take to flash the 1.5GB image will depend on the speed of the micro SD card. Etcher provides a handy ETA to completion!", 
+            "title": "Flash the image"
+        }, 
+        {
+            "location": "/guides/setup/#flash-complete", 
+            "text": "Aside: \nThe CRC32 checksum in the above image is likely to be different to the one reported for the final release version.", 
+            "title": "Flash complete!"
+        }, 
+        {
+            "location": "/guides/setup/#installing-tide", 
+            "text": "Now it's time to download and install the Tide application. Visit https://tide-download.tingbot.com", 
+            "title": "Installing Tide"
+        }, 
+        {
+            "location": "/guides/setup/#tides-up", 
+            "text": "When invoked Tide starts up with an untitled - hello world - template program file. You can find out more about this in the 'Writing your first app' section.", 
+            "title": "Tide's up!"
+        }, 
+        {
+            "location": "/guides/setup/#setting-up-wifi", 
+            "text": "Configuring the WiFi settings on the Tide OS SD card is the next step. To make this as simple as possible the Tide application has a special Tingbot WiFi Settings... menu item. For instance in the Mac UI this is in the Tide menu:    Aside: \nIf the Tingbot OS SD card isn't inserted you may get the following prompt:   Now enter the SSID name and password in the pop-up window:  and when saved to the SD card the following confirmation will be given:", 
+            "title": "Setting up Wifi"
+        }, 
+        {
+            "location": "/guides/setup/#time-to-get-coding", 
+            "text": "It's now time to get coding so please now eject the Tingbot OS SD card, insert the micro SD card into the Tingbot and plug in the Tingbot power supply. As this is the first time the SD card has been used the Tingbot it will go through a partial boot up sequence to expand the image to the full capacity of the SD card. Once the image has been expanded the Tingbot will automatically reboot - this time into Springboard - the Tingbot's UI.", 
+            "title": "Time to get coding!"
+        }, 
+        {
+            "location": "/guides/setup/#using-tide", 
+            "text": "", 
+            "title": "Using Tide"
+        }, 
+        {
+            "location": "/guides/setup/#save-as-and-run", 
+            "text": "The first thing to do is to use File -  Save As... (or File -  Save) to save the Untitled template Tingbot application as, say, a file named hello.tingapp. Now 'Run' the program in the Tingbot simulator and the simulated Tingbot will pop up!", 
+            "title": "Save as... (and Run)"
+        }, 
+        {
+            "location": "/guides/setup/#the-real-ting", 
+            "text": "At this point we're sure that you'd like to run the app on the actual Tingbot. Nothing could be simpler! If your Tingbot is booted up then it should be showing the first screen of Springboard. If so all is well. If not, please check back over the previous instructions. If the Tingbot has been able to connect to WiFi then the Tide application should have detected it and the Tingbot's local IP address will appear in the top right hand menu. For instance:   Now select the real Tingbot rather than the simulator and once this is done notice that the Download button is now activated. Clicking on this button will cause hello.tingapp to be downloaded to the Tingbot.    Aside: \nScrolling through Springboard will show the newly installed application as 'Untitled' but we'll explain why later.\nIf you have scrolled to Untitled you can start it by tapping its screen icon.   When developing code it is often more convenient to wrap the download and run into one step. That's what the Run button achieves and clicking on this will download the app and start it running on the Tingbot. The following screenshot shows this. Note that the button icon changes from 'play' to 'stop' when the app has been started by this method:", 
+            "title": "The real ting!"
+        }, 
+        {
+            "location": "/guides/setup/#one-last-ting", 
+            "text": "The reason that the Hello app shows up in Springboard as 'Untitled' is because the app.tbinfo has not been updated by the programmer. The first screenshot below shows the default app.tbinfo settings (and active 'Stop' button) and the second screenshot shows an updated app.tbinfo (and active 'Play' and 'Download' buttons showing that the app has been stopped in preparation for an update and re-run).   Now it's time to explain the process of writing your first Tingbot app. This comes next!", 
+            "title": "One last Ting!"
+        }, 
+        {
+            "location": "/guides/first-app/", 
+            "text": "Getting started\n\n\nA clean slate\n\n\nOpen up Tide and choose File -\n New.\n\n\nYou'll be presented with the app template, which looks like this:\n\n\nimport tingbot\nfrom tingbot import *\n\n# setup code here\n\ndef loop():\n    # drawing code here\n    screen.fill(color='black')\n    screen.text('Hello world!')\n\n# run the app\ntingbot.run(loop)\n\n\n\nThis program just writes 'Hello world' to the screen. Try running it!\nClick the Run button in the top left of the Tide window to run this code\nin the simulator. It'll look like this:\n\n\n\n\nThis program consists of a few parts-\n\n\nImport\n\n\nimport tingbot\nfrom tingbot import *\n\n\n\nAt the start, we \nimport\n some functionality into the program. Here,\nwe're importing everything from the tingbot libraries, so we can use\n\nscreen\n to draw things to the screen. There are lots of things you can\nimport, like \nimport requests\n for getting data from the internet, or\n\nimport time\n to access the system clock.\n\n\nSetup\n\n\n# setup code here\n\n\n\nThis part contains code that runs when your app starts. For this app,\nthere's no setup required, so there's just a comment.\n\n\n\n\nnote\n\n\nComments begin with \n#\n, are used as notes-to-self, or notes to others\nreading this program, and have no effect on how the program runs.\n\n\n\n\nLoop\n\n\ndef loop():\n    # drawing code here\n    screen.fill(color='black')\n    screen.text('Hello world!')\n\n\n\nIn this function, \nloop()\n, we draw to the screen. This function is run\nrepeatedly while your program is running.\n\n\n\n\nnote\n\n\nFunctions are little bits of code that can be 'called' (meaning run)\nrepeatedly from different parts of the program. This loop function is\ngiven to the tingbot.run() to draw the screen.\n\n\n\n\nRun\n\n\ntingbot.run(loop)\n\n\n\nFinally we run the program. This line causes the \nloop()\n function to be\ncalled over and over, drawing to the screen.\n\n\nMake a change\n\n\nLet's try making a change to our app. We can change the colors using the\ncolor parameter.\n\n\nimport tingbot\nfrom tingbot import *\n\n# setup code here\n\ndef loop():\n    # drawing code here\n    screen.fill(color='white')\n    screen.text('Hello world!', color='blue')\n\n# run the app\ntingbot.run(loop)\n\n\n\nYour first app - a digital clock\n\n\nFor this app we're going to import some functionality from the Python\n\ntime\n module.\n\n\nimport tingbot\nfrom tingbot import *\nimport time\n\ndef loop():\n    current_time = time.strftime(\"%Y-%m-%d %H:%M:%S\")\n\n    screen.fill(\n        color='black'\n    )\n    screen.text(\n        current_time, \n        color='white'\n    )\n\ntingbot.run(loop)\n\n\n\nA few things have changed in the above- we've removed the comments and\nsplit the \nfill\n and \ntext\n calls to multiple lines. This is just to\nmake it easier to read.\n\n\nWe've also added a call to \ntime.strftime\n.\n\n\n\n\ntip\n\n\nWondering where we got \ntime.strftime\n from? The module \ntime\n is part\nof Python, so it's always available, and you can learn about it from\nthe \nPython docs\n.\n\n\nWe found it by Googling '\ncurrent time\npython\n' and checking\nthe first search result!\n\n\n\n\nSo now instead of writing 'Hello world' to the screen, we're writing the\ncurrent time. It looks like this:\n\n\n\n\nWe're getting there!\n\n\n\n\nnote\n\n\nWondering what the \ncurrent_time\n is? It's a \nvariable\n. Variables are\na way to carry data around in a program. So on the line\n\ncurrent_time = time.strftime(\"%Y-%m-%d %H:%M:%S\")\n we created and set\nthe variable, and we used it in the \nscreen.text\n call.\n\n\n\n\nLet's just adjust the formatting.\n\n\nimport tingbot\nfrom tingbot import *\nimport time\n\ndef loop():\n    current_date = time.strftime(\"%d %B %Y\")\n    current_time = time.strftime(\"%H:%M:%S\")\n\n    screen.fill(\n        color='black'\n    )\n    screen.text(\n        current_time, \n        xy=(160, 110),\n        color='white',\n        font_size=50,\n    )\n    screen.text(\n        current_date,\n        xy=(160, 180),\n        color='white',\n        font_size=24,\n    )\n\ntingbot.run(loop)\n\n\n\n\n\nNot bad for 25 lines!", 
+            "title": "Writing your first app"
+        }, 
+        {
+            "location": "/guides/first-app/#getting-started", 
+            "text": "", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/guides/first-app/#a-clean-slate", 
+            "text": "Open up Tide and choose File -  New.  You'll be presented with the app template, which looks like this:  import tingbot\nfrom tingbot import *\n\n# setup code here\n\ndef loop():\n    # drawing code here\n    screen.fill(color='black')\n    screen.text('Hello world!')\n\n# run the app\ntingbot.run(loop)  This program just writes 'Hello world' to the screen. Try running it!\nClick the Run button in the top left of the Tide window to run this code\nin the simulator. It'll look like this:   This program consists of a few parts-", 
+            "title": "A clean slate"
+        }, 
+        {
+            "location": "/guides/first-app/#import", 
+            "text": "import tingbot\nfrom tingbot import *  At the start, we  import  some functionality into the program. Here,\nwe're importing everything from the tingbot libraries, so we can use screen  to draw things to the screen. There are lots of things you can\nimport, like  import requests  for getting data from the internet, or import time  to access the system clock.", 
+            "title": "Import"
+        }, 
+        {
+            "location": "/guides/first-app/#setup", 
+            "text": "# setup code here  This part contains code that runs when your app starts. For this app,\nthere's no setup required, so there's just a comment.   note  Comments begin with  # , are used as notes-to-self, or notes to others\nreading this program, and have no effect on how the program runs.", 
+            "title": "Setup"
+        }, 
+        {
+            "location": "/guides/first-app/#loop", 
+            "text": "def loop():\n    # drawing code here\n    screen.fill(color='black')\n    screen.text('Hello world!')  In this function,  loop() , we draw to the screen. This function is run\nrepeatedly while your program is running.   note  Functions are little bits of code that can be 'called' (meaning run)\nrepeatedly from different parts of the program. This loop function is\ngiven to the tingbot.run() to draw the screen.", 
+            "title": "Loop"
+        }, 
+        {
+            "location": "/guides/first-app/#run", 
+            "text": "tingbot.run(loop)  Finally we run the program. This line causes the  loop()  function to be\ncalled over and over, drawing to the screen.", 
+            "title": "Run"
+        }, 
+        {
+            "location": "/guides/first-app/#make-a-change", 
+            "text": "Let's try making a change to our app. We can change the colors using the\ncolor parameter.  import tingbot\nfrom tingbot import *\n\n# setup code here\n\ndef loop():\n    # drawing code here\n    screen.fill(color='white')\n    screen.text('Hello world!', color='blue')\n\n# run the app\ntingbot.run(loop)", 
+            "title": "Make a change"
+        }, 
+        {
+            "location": "/guides/first-app/#your-first-app-a-digital-clock", 
+            "text": "For this app we're going to import some functionality from the Python time  module.  import tingbot\nfrom tingbot import *\nimport time\n\ndef loop():\n    current_time = time.strftime(\"%Y-%m-%d %H:%M:%S\")\n\n    screen.fill(\n        color='black'\n    )\n    screen.text(\n        current_time, \n        color='white'\n    )\n\ntingbot.run(loop)  A few things have changed in the above- we've removed the comments and\nsplit the  fill  and  text  calls to multiple lines. This is just to\nmake it easier to read.  We've also added a call to  time.strftime .   tip  Wondering where we got  time.strftime  from? The module  time  is part\nof Python, so it's always available, and you can learn about it from\nthe  Python docs .  We found it by Googling ' current time\npython ' and checking\nthe first search result!   So now instead of writing 'Hello world' to the screen, we're writing the\ncurrent time. It looks like this:   We're getting there!   note  Wondering what the  current_time  is? It's a  variable . Variables are\na way to carry data around in a program. So on the line current_time = time.strftime(\"%Y-%m-%d %H:%M:%S\")  we created and set\nthe variable, and we used it in the  screen.text  call.   Let's just adjust the formatting.  import tingbot\nfrom tingbot import *\nimport time\n\ndef loop():\n    current_date = time.strftime(\"%d %B %Y\")\n    current_time = time.strftime(\"%H:%M:%S\")\n\n    screen.fill(\n        color='black'\n    )\n    screen.text(\n        current_time, \n        xy=(160, 110),\n        color='white',\n        font_size=50,\n    )\n    screen.text(\n        current_date,\n        xy=(160, 180),\n        color='white',\n        font_size=24,\n    )\n\ntingbot.run(loop)   Not bad for 25 lines!", 
+            "title": "Your first app - a digital clock"
+        }, 
+        {
+            "location": "/guides/touch-buttons/", 
+            "text": "// TODO: a guide that builds a slightly more advanced app, including reacting to touch and buttons", 
+            "title": "Touch and buttons"
+        }, 
+        {
+            "location": "/guides/web-apis/", 
+            "text": "// TODO: a guide that explains how to find and use web APIs to incorporate data into a Tingbot app", 
+            "title": "Consuming web APIs"
+        }, 
+        {
+            "location": "/guides/python-modules/", 
+            "text": "// TODO: how to find python modules, and create a requirements.txt with them listed", 
+            "title": "Using Python modules"
+        }, 
+        {
+            "location": "/guides/publish-to-ocean/", 
+            "text": "// TODO: how to push your app to Github and open a pull-request to tingbot-ocean to include it", 
+            "title": "Publishing to Tingbot Ocean"
+        }, 
+        {
+            "location": "/links/tingbot-python-docs/", 
+            "text": "", 
+            "title": "tingbot-python"
+        }, 
+        {
+            "location": "/reference/tingapp-format/", 
+            "text": "The tingapp format\n\n\nTingbot apps are saved in the 'tingapp' format, which contains all the code, resources and configuration needed for the app.\n\n\nLayout\n\n\nThe layout is as follows:\n\n\n\n  \n example.tingapp\n  \u2502  \n main.py (or \n main)\n  \u2502  \n app.tbinfo\n  \u2502  \n icon.png\n  \u2502  \n requirements.txt [optional]\n  \u2502      ...more code/resources...\n\n\n\n\nTaking these in turn-\n\n\n\u00a0 main[.py]\n\n\nThis file contains the code that runs when the app is started. If \nmain\n is present in the bundle, and is executable, then it is run directly. Otherwise, \nmain.py\n is called with \npython main.py\n. \n\n\nIn both cases the working directory of the app is set to the root of the tingapp before launch.\n\n\n\u00a0 app.tbinfo\n\n\nThis file contains information about the app itself. It's a JSON file, and looks like this:\n\n\n{\n    \nname\n: \nPi in the Sty\n,\n    \nauthor\n: \nFarmer Hogget\n,\n    \ncaption\n: \nWatch your pig, all day, every day\n,\n    \nversion\n: \n0.1\n,\n    \ntwitter\n: \n@hogget\n,\n    \nwebsite\n: \nhttp://farmerhogget.tumblr.com\n,\n    \nbackground_color\n: \n1db0e9\n\n}\n\n\n\n\n\n\nname\n The display name of the app, as displayed on the Tingbot home screen. If not specified, uses the filename e.g. \"PiInTheSty.tingapp\"\n\n\nauthor\n Your name, or pseudonym if you want to mysterious!\n\n\ncaption\n 1 line description of the app\n\n\nversion\n The current version of the app. Stick to a conventional format, e.g. '1', '1.2' or '1.2.3'.\n\n\ntwitter\n Your twitter handle\n\n\nwebsite\n A URL that people can go for info on the app - e.g. the Github project URL.\n\n\nbackground_color\n A hex-encoded RGB color value to used for the background behind the app icon. If not specified, a dark grey is used.\n\n\n\n\n\u00a0 icon.png\n\n\nAn image that is displayed on the Tingbot home screen with the app. The image should be on a transparent background. The image is displayed at 96x96px on the home screen, but a size of 192x192 px is ideal, as the image will be also used on the \nOcean\n.\n\n\n\u00a0 requirements.txt [optional]\n\n\nIf you want to use Python modules other than the \nPython built-ins\n, \ntingbot-python\n and \nrequests\n, you can list them here. The format is as follows\n\n\ntingbot-python==0.9.0\npytz\ntweepy\nscipy==0.18.0\n\n\n\n\nEach module should be on its own line, and optionally, you can specify a version number. When releasing an app, it's recommended to specify versions for \nevery\n module listed - that way, updates to those modules can't break your app in the future.\n\n\nThere's more you can do with requirements files. See the \npip documentation\n for more information.\n\n\nExternal dependencies\n\n\nTingapps should run without requiring any setup on Tingbot OS. If you're making a Tingapp that requires other software to be installed, this should be automatic on first launch.\n\n\nIf your tingapp requires software installed by API, check out \nthis issue\n and let us know so we can prioritise accordingly.", 
+            "title": "The tingapp format"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#the-tingapp-format", 
+            "text": "Tingbot apps are saved in the 'tingapp' format, which contains all the code, resources and configuration needed for the app.", 
+            "title": "The tingapp format"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#layout", 
+            "text": "The layout is as follows:  \n    example.tingapp\n  \u2502    main.py (or   main)\n  \u2502    app.tbinfo\n  \u2502    icon.png\n  \u2502    requirements.txt [optional]\n  \u2502      ...more code/resources...  Taking these in turn-", 
+            "title": "Layout"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#wzxhzdk3wzxhzdk4-mainpy", 
+            "text": "This file contains the code that runs when the app is started. If  main  is present in the bundle, and is executable, then it is run directly. Otherwise,  main.py  is called with  python main.py .   In both cases the working directory of the app is set to the root of the tingapp before launch.", 
+            "title": "\u00a0 main[.py]"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#wzxhzdk5wzxhzdk6-apptbinfo", 
+            "text": "This file contains information about the app itself. It's a JSON file, and looks like this:  {\n     name :  Pi in the Sty ,\n     author :  Farmer Hogget ,\n     caption :  Watch your pig, all day, every day ,\n     version :  0.1 ,\n     twitter :  @hogget ,\n     website :  http://farmerhogget.tumblr.com ,\n     background_color :  1db0e9 \n}   name  The display name of the app, as displayed on the Tingbot home screen. If not specified, uses the filename e.g. \"PiInTheSty.tingapp\"  author  Your name, or pseudonym if you want to mysterious!  caption  1 line description of the app  version  The current version of the app. Stick to a conventional format, e.g. '1', '1.2' or '1.2.3'.  twitter  Your twitter handle  website  A URL that people can go for info on the app - e.g. the Github project URL.  background_color  A hex-encoded RGB color value to used for the background behind the app icon. If not specified, a dark grey is used.", 
+            "title": "\u00a0 app.tbinfo"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#wzxhzdk7wzxhzdk8-iconpng", 
+            "text": "An image that is displayed on the Tingbot home screen with the app. The image should be on a transparent background. The image is displayed at 96x96px on the home screen, but a size of 192x192 px is ideal, as the image will be also used on the  Ocean .", 
+            "title": "\u00a0 icon.png"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#wzxhzdk9wzxhzdk10-requirementstxt-optional", 
+            "text": "If you want to use Python modules other than the  Python built-ins ,  tingbot-python  and  requests , you can list them here. The format is as follows  tingbot-python==0.9.0\npytz\ntweepy\nscipy==0.18.0  Each module should be on its own line, and optionally, you can specify a version number. When releasing an app, it's recommended to specify versions for  every  module listed - that way, updates to those modules can't break your app in the future.  There's more you can do with requirements files. See the  pip documentation  for more information.", 
+            "title": "\u00a0 requirements.txt [optional]"
+        }, 
+        {
+            "location": "/reference/tingapp-format/#external-dependencies", 
+            "text": "Tingapps should run without requiring any setup on Tingbot OS. If you're making a Tingapp that requires other software to be installed, this should be automatic on first launch.  If your tingapp requires software installed by API, check out  this issue  and let us know so we can prioritise accordingly.", 
+            "title": "External dependencies"
+        }, 
+        {
+            "location": "/reference/tingbot-os/", 
+            "text": "Tingbot OS\n\n\nDownload: check the \nthe latest release\n on Github.\n\n\nTingbot OS is a customised Raspbian \"Jessie\" Linux. If you're familiar with Linux, feel free to SSH in and have a poke around! The default user has username 'pi' and password 'raspberry'. \n\n\nApps\n\n\nApps on the home screen are stored in \n/apps\n. There are also two symlinks in this folder, \n/apps/home\n and \n/apps/startup\n.\n\n\n\n\n/apps/home\n This symlink points to the app to run when the 'home' button combo is pressed, or when an app exits. By default, this points to our 'home screen', the \nspringboard\n.\n\n\n/apps/startup\n This symlink points to the app to launch at startup. If your Tingbot is running only one app most of the time, it makes sense to run that at startup. By default this points to \n/app/home\n.\n\n\n\n\nFor example, to change the startup link, SSH into the Tingbot and do-\n\n\nln -snf /path/to/your/app.tingapp /apps/startup\n\n\n\nLogs\n\n\nWhen working on a Tingbot app, it can be useful to see the logs of the running app. On Tingbot, you can view the log stream of the current app by using the \ntbtail\n command.\n\n\nUpdates\n\n\nUpdates can be installed from the Springboard settings pane, or SSH in and run the \ntbupgrade\n command.\n\n\nMore info\n\n\nFor more information on Tingbot OS, check out the Github repos-\n\n\nTingbot OS\n\n\n tingbot/tingbot-os\n\nBuilds the tingbot-os.deb file and disk images\n\n\ntbprocessd\n\n\n tingbot/tbprocessd\n\nDaemon process that manages the running of apps on Tingbot OS\n\n\nspringboard\n\n\n tingbot/springboard\n\nThe Tingbot home screen", 
+            "title": "Tingbot OS"
+        }, 
+        {
+            "location": "/reference/tingbot-os/#tingbot-os", 
+            "text": "Download: check the  the latest release  on Github.  Tingbot OS is a customised Raspbian \"Jessie\" Linux. If you're familiar with Linux, feel free to SSH in and have a poke around! The default user has username 'pi' and password 'raspberry'.", 
+            "title": "Tingbot OS"
+        }, 
+        {
+            "location": "/reference/tingbot-os/#apps", 
+            "text": "Apps on the home screen are stored in  /apps . There are also two symlinks in this folder,  /apps/home  and  /apps/startup .   /apps/home  This symlink points to the app to run when the 'home' button combo is pressed, or when an app exits. By default, this points to our 'home screen', the  springboard .  /apps/startup  This symlink points to the app to launch at startup. If your Tingbot is running only one app most of the time, it makes sense to run that at startup. By default this points to  /app/home .   For example, to change the startup link, SSH into the Tingbot and do-  ln -snf /path/to/your/app.tingapp /apps/startup", 
+            "title": "Apps"
+        }, 
+        {
+            "location": "/reference/tingbot-os/#logs", 
+            "text": "When working on a Tingbot app, it can be useful to see the logs of the running app. On Tingbot, you can view the log stream of the current app by using the  tbtail  command.", 
+            "title": "Logs"
+        }, 
+        {
+            "location": "/reference/tingbot-os/#updates", 
+            "text": "Updates can be installed from the Springboard settings pane, or SSH in and run the  tbupgrade  command.", 
+            "title": "Updates"
+        }, 
+        {
+            "location": "/reference/tingbot-os/#more-info", 
+            "text": "For more information on Tingbot OS, check out the Github repos-  Tingbot OS   tingbot/tingbot-os \nBuilds the tingbot-os.deb file and disk images  tbprocessd   tingbot/tbprocessd \nDaemon process that manages the running of apps on Tingbot OS  springboard   tingbot/springboard \nThe Tingbot home screen", 
+            "title": "More info"
+        }, 
+        {
+            "location": "/links/forum/", 
+            "text": "forum.md", 
+            "title": "Forum"
+        }, 
+        {
+            "location": "/links/ocean/", 
+            "text": "", 
+            "title": "Tingbot Ocean"
+        }, 
+        {
+            "location": "/links/github/", 
+            "text": "github.md", 
+            "title": "Github"
+        }, 
+        {
+            "location": "/links/shop/", 
+            "text": "shop.md", 
+            "title": "The Tingbot Shop"
+        }
+    ]
+}
