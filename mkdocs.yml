@@ -4,6 +4,7 @@ theme: readthedocs
 extra_css: [extra.css]
 pages:
 - Home: 'index.md'
+- Tide: 'reference/tide.md'
 - User Guide:
     - 'Setting up Tingbot': 'guides/setup.md'
     - 'Writing your first app': 'guides/first-app.md'
@@ -11,10 +12,15 @@ pages:
     - 'Consuming web APIs': 'guides/web-apis.md'
     - 'Using Python modules': 'guides/python-modules.md'
     - 'Publishing to Tingbot Ocean': 'guides/publish-to-ocean.md'
-- Examples:
-    - 'Tingbot Ocean': 'links/ocean.md'
+# - Examples:
+    # - Tide bundled examples page
 - Reference:
     - 'tingbot-python': 'links/tingbot-python-docs.md'
-    - 'Tide': 'reference/tide.md'
     - 'The tingapp format': 'reference/tingapp-format.md'
     - 'Tingbot OS': 'reference/tingbot-os.md'
+- Links:
+    - 'Forum': 'links/forum.md'
+    - 'Tingbot Ocean': 'links/ocean.md'
+    - 'Github': 'links/github.md'
+    - 'The Tingbot Shop': 'links/shop.md'
+    # logo links to tingbot.com
