@@ -84,6 +84,10 @@ body, .wy-nav-side {
 	padding-left: 3.5em;
 }
 
+.wy-menu-vertical li.current ul li a.toctree-l4 {
+	padding-left: 5em;
+}
+
 .wy-menu-vertical li.current a {
 	border-right: none;
 }
