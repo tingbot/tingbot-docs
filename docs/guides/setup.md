@@ -1,29 +1,36 @@
-// TODO: first-run setup instructions
-// incl. Tingbot assembly, download image, flash to SD, Wifi setup
 
 Introduction
 ============
-Installing Tingbot OS on the Tingbot's SD card and installing the Tide application (Tingbot's integrated development environment) on your computer are the first steps to getting your new Tingbot up and running.
+
+Your Tingbot is assembled and ready to go.
+
+During this guide we'll:
+
+* Install Tingbot OS on the Tingbot's SD card
+* Install the Tide application (Tingbot's integrated development environment) on your computer
+* Get your new Tingbot online
+* Test and install the "Hello World" app
+
+A quick note before we begin - you'll need a **microSD card** and a card reader on your computer. We recommend an 8GB or more card, but you could probably get away with 4GB.
 
 Installing Tingbot OS
 =====================
+
 Download Tingbot OS
-----------------
-Visit [github link here] to download the Tingbot disk.img.zip and then expand this to disk.img. On the Mac the result will look like:
+-------------------
+Visit [the Tingbot OS releases page](http://github.com/tingbot/tingbot-os/releases/latest) to download the Tingbot **disk.img.zip** and then expand it to **disk.img**. On the Mac the result will look like:
 
 ![image](images/TingbotGuide009.png)
 
-We recommend the use of a micro SD card of 8GB or more. As there are a number of ways of writing the Tingbot OS image to the SD card we can’t cover all options. However, the easiest way we have found to prepare the SD card is to use Etcher by Resin.io and we recommend this approach and document it below.
-
 Download and Install Etcher
 ---------------------------
-Visit www.etcher.io and download Etcher from there. Here's a screenshot of the home page and as you can see it has detected the Apple Mac that's being used to write and screenshot this tutorial.
+Visit [etcher.io](http://www.etcher.io) and download Etcher from there. 
 
 ![image](images/TingbotGuide001.png)
 
 Use Etcher to burn the Tingbot OS disk image
 --------------------------------------------
-Once Etcher has been installed it can be used to burn the Tingbot OS image to the micro SD card. As follows.
+Now Etcher has been installed it can be used to burn the Tingbot OS image to the microSD card, as follows
 
 ### Select the Tingbot OS image
 ![image](images/TingbotGuide012.png)
@@ -43,7 +50,11 @@ The time it will take to flash the 1.5GB image will depend on the speed of the m
 
 Installing Tide
 ===============
-Now it's time to download and install the Tide application. Visit https://tide-download.tingbot.com
+Now it's time to download and install the Tide application. Download:
+
+- [<i class="fa fa-apple" aria-hidden="true"></i> Mac](http://tide-download.tingbot.com/download/osx)
+- [<i class="fa fa-windows" aria-hidden="true"></i> Windows](http://tide-download.tingbot.com/download/win)
+- <a href="http://github.com/tingbot/tide-electron/releases/latest" target="_blank"><i class="fa fa-linux" aria-hidden="true"></i> Linux (choose the .deb or .rpm files)</a>
 
 ### Tide's up!
 When invoked Tide starts up with an untitled - hello world - template program file. You can find out more about this in the 'Writing your first app' section.
