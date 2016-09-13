@@ -1,3 +1,6 @@
+By using Tingbot and Tide you agree with our [terms and conditions](http://tingbot.com/terms/).
+
+---
 
 Introduction
 ============
