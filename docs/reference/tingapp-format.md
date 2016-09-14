@@ -59,6 +59,8 @@ This file contains information about the app itself. It's a JSON file, and looks
 
 An image that is displayed on the Tingbot home screen with the app. The image should be on a transparent background. The image is displayed at 96x96px on the home screen, but a size of 192x192 px is ideal, as the image will be also used on the [Ocean](http://ocean.tingbot.com).
 
+Not sure what do draw for your icon? We like colorful, isometric drawings. You can use [joerick's triangulart tool](https://joerick.github.io/triangulart/) to make one!
+
 <a name="requirements"></a>
 
 ### <i class="fa fa-file-text-o"></i>  requirements.txt [optional]
