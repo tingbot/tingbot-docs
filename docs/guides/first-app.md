@@ -13,13 +13,13 @@ You'll be presented with the app template, which looks like this:
 
     # setup code here
 
+    @every(seconds=1.0/30)
     def loop():
         # drawing code here
         screen.fill(color='black')
         screen.text('Hello world!')
 
-    # run the app
-    tingbot.run(loop)
+    tingbot.run()
 
 This program just writes 'Hello world' to the screen. Try running it!
 Click the Run button in the top left of the Tide window to run this code
@@ -54,6 +54,7 @@ there's no setup required, so there's just a comment.
 
 ### Loop
 
+    @every(seconds=1.0/30)
     def loop():
         # drawing code here
         screen.fill(color='black')
@@ -66,11 +67,11 @@ repeatedly while your program is running.
 >
 > Functions are little bits of code that can be 'called' (meaning run)
 > repeatedly from different parts of the program. This loop function is
-> given to the tingbot.run() to draw the screen.
+> 'decorated' so it is called 30 times per second in the program.
 
 ### Run
 
-    tingbot.run(loop)
+    tingbot.run()
 
 Finally we run the program. This line causes the `loop()` function to be
 called over and over, drawing to the screen.
@@ -86,13 +87,13 @@ color parameter.
 
     # setup code here
 
+    @every(seconds=1.0/30)
     def loop():
         # drawing code here
         screen.fill(color='white')
         screen.text('Hello world!', color='blue')
 
-    # run the app
-    tingbot.run(loop)
+    tingbot.run()
 
 Your first app - a digital clock
 --------------------------------
@@ -104,6 +105,7 @@ For this app we're going to import some functionality from the Python
     from tingbot import *
     import time
 
+    @every(seconds=1.0/30)
     def loop():
         current_time = time.strftime("%Y-%m-%d %H:%M:%S")
 
@@ -115,7 +117,7 @@ For this app we're going to import some functionality from the Python
             color='white'
         )
 
-    tingbot.run(loop)
+    tingbot.run()
 
 A few things have changed in the above- we've removed the comments and
 split the `fill` and `text` calls to multiple lines. This is just to
@@ -153,6 +155,7 @@ Let's just adjust the formatting.
     from tingbot import *
     import time
 
+    @every(seconds=1.0/30)
     def loop():
         current_date = time.strftime("%d %B %Y")
         current_time = time.strftime("%H:%M:%S")
@@ -173,7 +176,7 @@ Let's just adjust the formatting.
             font_size=24,
         )
 
-    tingbot.run(loop)
+    tingbot.run()
 
 ![image](images/simulator-live.gif)
 
