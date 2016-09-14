@@ -19,11 +19,15 @@ The layout is as follows:
 
 Taking these in turn-
 
+<a name="main"></a>
+
 ### <i class="fa fa-file-code-o" aria-hidden="true"></i>  main[.py] 
 
 This file contains the code that runs when the app is started. If `main` is present in the bundle, and is executable, then it is run directly. Otherwise, `main.py` is called with `python main.py`. 
 
 In both cases the working directory of the app is set to the root of the tingapp before launch.
+
+<a name="tbinfo"></a>
 
 ### <i class="fa fa-file-text-o"></i>  app.tbinfo
 
@@ -49,9 +53,13 @@ This file contains information about the app itself. It's a JSON file, and looks
 - `website` A URL that people can go for info on the app - e.g. the Github project URL.
 - `background_color` A hex-encoded RGB color value to used for the background behind the app icon. If not specified, a dark grey is used.
 
+<a name="icon"></a>
+
 ### <i class="fa fa-file-image-o" aria-hidden="true"></i>  icon.png
 
 An image that is displayed on the Tingbot home screen with the app. The image should be on a transparent background. The image is displayed at 96x96px on the home screen, but a size of 192x192 px is ideal, as the image will be also used on the [Ocean](http://ocean.tingbot.com).
+
+<a name="requirements"></a>
 
 ### <i class="fa fa-file-text-o"></i>  requirements.txt [optional]
 
