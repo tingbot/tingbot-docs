@@ -11,7 +11,7 @@
 
     
     <url>
-     <loc>None/reference/tide/</loc>
+     <loc>None/tide/</loc>
      <lastmod>2016-09-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -68,6 +68,12 @@
     
 
     
+        
+    <url>
+     <loc>None/links/forum/</loc>
+     <lastmod>2016-09-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
         
     <url>
      <loc>None/links/ocean/</loc>
