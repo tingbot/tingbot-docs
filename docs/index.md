@@ -1,4 +1,4 @@
-# Welcome to the Tingbot documentation
+![](images/welcome-header.png)
 
 // TODO: graphic, friendly greeting and links to most used pages
 
