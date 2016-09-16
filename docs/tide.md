@@ -5,19 +5,18 @@ Tide is the IDE for Tingbot.
 
 ![](images/tide-header.png)
 
-## Download latest version <span class="js-tide-version"></span>
-<!--
+## Download <span class="js-tide-version"></span>
+
 <script>
     $.ajax({
         url: 'https://api.github.com/repos/tingbot/tide-electron/releases/latest',
-        dataType: 'xml',
-        success: function (xmlDocument) {
-            var version = xmlDoc.getElementsByTagName("entry")[0].getElementsByTagName("title")[0].nodeValue;
+        dataType: 'json',
+        success: function (release) {
+            var version = release.name;
             $('.js-tide-version').text(version);
         }
     });
 </script>
- -->
 
 <table>
     <thead>
