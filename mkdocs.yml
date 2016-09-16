@@ -10,8 +10,8 @@ pages:
     - 'Setting up Tingbot': 'guides/setup.md'
     - 'Writing your first app': 'guides/first-app.md'
     - 'Touch and buttons': 'guides/touch-buttons.md'
-    - 'Consuming web APIs': 'guides/web-apis.md'
-    - 'Using Python modules': 'guides/python-modules.md'
+    # - 'Consuming web APIs': 'guides/web-apis.md'
+    # - 'Using Python modules': 'guides/python-modules.md'
     - 'Publishing to Tingbot Ocean': 'guides/publish-to-ocean.md'
 # - Examples:
     # - Tide bundled examples page
@@ -20,8 +20,7 @@ pages:
     - 'The tingapp format': 'reference/tingapp-format.md'
     - 'Tingbot OS': 'reference/tingbot-os.md'
 - Links:
-    - 'Forum': 'links/forum.md'
+    # - 'Forum': 'links/forum.md'
     - 'Tingbot Ocean': 'links/ocean.md'
     - 'Github': 'links/github.md'
-    - 'The Tingbot Shop': 'links/shop.md'
-    # logo links to tingbot.com
+    # - 'The Tingbot Shop': 'links/shop.md'
