@@ -33,6 +33,7 @@
   <script src="../../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../../js/highlight.pack.js"></script>
   <script src="../../js/theme.js"></script> 
+  <script src="../../extra.js"></script>
 
   
 </head>
@@ -110,20 +111,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../web-apis/">Consuming web APIs</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../python-modules/">Using Python modules</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../publish-to-ocean/">Publishing to Tingbot Ocean</a>
         
     </li>
@@ -168,13 +155,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../links/forum/">Forum</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../../links/ocean/">Tingbot Ocean</a>
         
     </li>
@@ -183,13 +163,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../links/github/">Github</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../links/shop/">The Tingbot Shop</a>
         
     </li>
 
@@ -246,13 +219,13 @@ from tingbot import *
 
 # setup code here
 
+@every(seconds=1.0/30)
 def loop():
     # drawing code here
     screen.fill(color='black')
     screen.text('Hello world!')
 
-# run the app
-tingbot.run(loop)
+tingbot.run()
 </code></pre>
 <p>This program just writes 'Hello world' to the screen. Try running it!
 Click the Run button in the top left of the Tide window to run this code
@@ -279,7 +252,8 @@ there's no setup required, so there's just a comment.</p>
 reading this program, and have no effect on how the program runs.</p>
 </blockquote>
 <h3 id="loop">Loop</h3>
-<pre><code>def loop():
+<pre><code>@every(seconds=1.0/30)
+def loop():
     # drawing code here
     screen.fill(color='black')
     screen.text('Hello world!')
@@ -290,10 +264,10 @@ repeatedly while your program is running.</p>
 <p><strong>note</strong></p>
 <p>Functions are little bits of code that can be 'called' (meaning run)
 repeatedly from different parts of the program. This loop function is
-given to the tingbot.run() to draw the screen.</p>
+'decorated' so it is called 30 times per second in the program.</p>
 </blockquote>
 <h3 id="run">Run</h3>
-<pre><code>tingbot.run(loop)
+<pre><code>tingbot.run()
 </code></pre>
 <p>Finally we run the program. This line causes the <code>loop()</code> function to be
 called over and over, drawing to the screen.</p>
@@ -305,13 +279,13 @@ from tingbot import *
 
 # setup code here
 
+@every(seconds=1.0/30)
 def loop():
     # drawing code here
     screen.fill(color='white')
     screen.text('Hello world!', color='blue')
 
-# run the app
-tingbot.run(loop)
+tingbot.run()
 </code></pre>
 <h2 id="your-first-app-a-digital-clock">Your first app - a digital clock</h2>
 <p>For this app we're going to import some functionality from the Python
@@ -320,6 +294,7 @@ tingbot.run(loop)
 from tingbot import *
 import time
 
+@every(seconds=1.0/30)
 def loop():
     current_time = time.strftime("%Y-%m-%d %H:%M:%S")
 
@@ -331,7 +306,7 @@ def loop():
         color='white'
     )
 
-tingbot.run(loop)
+tingbot.run()
 </code></pre>
 <p>A few things have changed in the above- we've removed the comments and
 split the <code>fill</code> and <code>text</code> calls to multiple lines. This is just to
@@ -362,6 +337,7 @@ the variable, and we used it in the <code>screen.text</code> call.</p>
 from tingbot import *
 import time
 
+@every(seconds=1.0/30)
 def loop():
     current_date = time.strftime("%d %B %Y")
     current_time = time.strftime("%H:%M:%S")
@@ -382,7 +358,7 @@ def loop():
         font_size=24,
     )
 
-tingbot.run(loop)
+tingbot.run()
 </code></pre>
 <p><img alt="image" src="../images/simulator-live.gif" /></p>
 <p>Not bad for 25 lines!</p>

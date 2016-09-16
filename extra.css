@@ -25,16 +25,13 @@ body, .wy-nav-side {
 	background: transparent;
 }
 
-.wy-side-nav-search:before {
-	background-image: url(images/logo-black.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	content: "";
+.wy-side-nav-search img.big-logo {
 	display: block;
-	width: 80%;
-	height: 50px;
+	width: 70%;
+	height: auto;
 	margin: 20px auto;
+	background-color: transparent;
+	border-radius: 0;
 }
 
 .wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {

@@ -33,6 +33,7 @@
   <script src="../../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../../js/highlight.pack.js"></script>
   <script src="../../js/theme.js"></script> 
+  <script src="../../extra.js"></script>
 
   
 </head>
@@ -96,24 +97,19 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../web-apis/">Consuming web APIs</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../python-modules/">Using Python modules</a>
-        
-    </li>
-
-        
-            
     <li class="toctree-l1 current">
         <a class="current" href="./">Publishing to Tingbot Ocean</a>
         
             <ul>
+            
+                <li class="toctree-l3"><a href="#publishing-your-app-to-the-ocean">Publishing your app to the Ocean</a></li>
+                
+                    <li><a class="toctree-l4" href="#getting-your-app-ready">Getting your app ready</a></li>
+                
+                    <li><a class="toctree-l4" href="#posting-to-github">Posting to GitHub</a></li>
+                
+                    <li><a class="toctree-l4" href="#adding-it-to-the-ocean">Adding it to the Ocean</a></li>
+                
             
             </ul>
         
@@ -159,13 +155,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../links/forum/">Forum</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../../links/ocean/">Tingbot Ocean</a>
         
     </li>
@@ -174,13 +163,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../links/github/">Github</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../links/shop/">The Tingbot Shop</a>
         
     </li>
 
@@ -228,7 +210,63 @@
           <div role="main">
             <div class="section">
               
-                <p>// TODO: how to push your app to Github and open a pull-request to tingbot-ocean to include it</p>
+                <h1 id="publishing-your-app-to-the-ocean">Publishing your app to the Ocean</h1>
+<p><a href="http://ocean.tingbot.com">The Tingbot Ocean</a> is the open-source app store for Tingbot. On the Ocean you can check out what other people have made, and post your own app for other people to use.</p>
+<h2 id="getting-your-app-ready">Getting your app ready</h2>
+<p>There are a few things you need to have before putting your app on the Ocean:</p>
+<ul>
+<li>An app that's fun or useful</li>
+<li>An <a href="../../reference/tingapp-format/#icon">app icon</a></li>
+<li>Properly filled out <a href="../../reference/tingapp-format/#tbinfo">app.tbinfo file</a></li>
+</ul>
+<p>Next up, you'll need to make your app downloadable on the web. Our favourite way to do this is post it to GitHub. </p>
+<h2 id="posting-to-github">Posting to GitHub</h2>
+<p>If you're familiar with git and GitHub, then put your tingapp folder <em>inside</em> a repo and skip to the next step. If you're not sure how to do that, read on.</p>
+<p>First up, make sure you've got Git installed. Install for <a href="https://www.atlassian.com/git/tutorials/install-git/mac-os-x">Mac</a>, <a href="https://www.atlassian.com/git/tutorials/install-git/windows">Win</a>, or <a href="https://www.atlassian.com/git/tutorials/install-git/linux">Linux</a>.</p>
+<p>Create an account at GitHub by going to <a href="http://github.com">github.com</a>, clicking the 'Sign up' button, and follow the instructions.</p>
+<p>Once you've got an account, click the ➕ button in the top right and choose 'New repository'.</p>
+<blockquote>
+<p><em>Note</em></p>
+<p>A repository (or 'repo' for short) is where your code lives. Git repositories also keep track of every change in your code, so you can make changes without worrying that you might break something!</p>
+</blockquote>
+<ul>
+<li>For the <strong>name</strong>, enter your tingapp name, without the '.tingapp' part.</li>
+<li>You can add a short <strong>description</strong> of what your app does.</li>
+<li>Leave it on the <strong>Public</strong> setting</li>
+<li><strong>Tick</strong> the 'Initialize this repository with a README' checkbox</li>
+<li>Choose a <strong>Python</strong> .gitignore file</li>
+<li>Choose an open source license. We recommend an '<strong>MIT License</strong>', because it's nice and simple. For more information, check <a href="http://choosealicense.com/">choosealicense.com</a></li>
+</ul>
+<p>By now, the page should look something like this:</p>
+<p><img alt="" src="../images/publishing-new-repo.png" /></p>
+<p>All set? Hit the big green button!</p>
+<p>On the next screen, you'll see your new repository. Copy your Git URL from the 'Clone or download' button.</p>
+<p><img alt="" src="../images/publishing-clone.png" /></p>
+<p>Now open a terminal ('Git Bash' on Windows) and type</p>
+<pre><code>git clone &lt;paste your git URL here&gt;
+</code></pre>
+<p>Git will download your repo, into a folder with the name you chose earlier. Now you can add your app, by copying it into the folder that was created.</p>
+<p>Finally, we can push it to GitHub. Go back to the terminal and type:</p>
+<pre><code>cd &lt;your repo name&gt;
+git add .
+git status
+</code></pre>
+<p>Git will output a list of files that are going to be added. Give it a look over and make sure there's nothing there you don't want to publish. If there is anything, remove the files and do <code>git add .</code> again.</p>
+<p>Finally, to push to GitHub, type</p>
+<pre><code>git commit
+git push
+</code></pre>
+<p>Check your repo page on GitHub, you should see your app appear!</p>
+<h2 id="adding-it-to-the-ocean">Adding it to the Ocean</h2>
+<p>Tingbot Ocean is also hosted on GitHub. To add your app, go to the <a href="https://github.com/tingbot/ocean/blob/gh-pages/_data/apps.yaml">_data/apps.yaml</a> page and add an entry for your app.</p>
+<p>Click the <i class="fa fa-pencil" aria-hidden="true"></i> pencil icon to edit, and then add your app. Just copy one of the existing entries and fill in your own information. Fields of note-</p>
+<ul>
+<li><code>icon</code> - this is a URL to your app's icon. An easy way to point at your app's icon is to use the GitHub 'raw' URL, which has the format: <code>https://raw.githubusercontent.com/&lt;username&gt;/&lt;appname&gt;/master/&lt;appname&gt;.tingapp/icon.png</code></li>
+<li><code>zip_url</code> - A URL to a zip download of the app. Again, GitHub makes this easy - <code>https://github.com/&lt;username&gt;/&lt;appname&gt;/archive/master.zip</code></li>
+<li><code>github_url</code> (optional) - If the app's hosted on GitHub, the GitHub repo link - <code>https://github.com/&lt;username&gt;/&lt;appname&gt;</code></li>
+<li><code>screenshot_url</code> (optional) - a URL to a screenshot of your app</li>
+</ul>
+<p>Save your change, and we'll get a pull request for your app. We'll take a quick look to review and then you should be live!</p>
               
             </div>
           </div>
@@ -239,7 +277,7 @@
         <a href="../../links/tingbot-python-docs/" class="btn btn-neutral float-right" title="tingbot-python">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../python-modules/" class="btn btn-neutral" title="Using Python modules"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../touch-buttons/" class="btn btn-neutral" title="Touch and buttons"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -267,7 +305,7 @@
           <a href="https://github.com/tingbot/tingbot-docs/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../python-modules/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../touch-buttons/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../../links/tingbot-python-docs/" style="color: #fcfcfc">Next &raquo;</a></span>
