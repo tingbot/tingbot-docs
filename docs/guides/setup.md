@@ -60,49 +60,72 @@ Now it's time to download and install the Tide application. Download:
 - <a href="http://github.com/tingbot/tide-electron/releases/latest" target="_blank"><i class="fa fa-linux" aria-hidden="true"></i> Linux (choose the .deb or .rpm files)</a>
 
 ### Tide's up!
-When invoked Tide starts up with an untitled - hello world - template program file. You can find out more about this in the 'Writing your first app' section.
+When invoked Tide starts up with an untitled - hello world - template program file. You can find out more about this in the [Writing your first app](/guides/first-app/) section.
 ![image](images/TingbotGuide023.png)
  
 ### Setting up Wifi
-Configuring the WiFi settings on the Tide OS SD card is the next step. To make this as simple as possible the Tide application has a special Tingbot WiFi Settings... menu item. For instance in the Mac UI this is in the Tide menu:
+Configuring the WiFi settings on the SD card is the next step.
+
+Remove and reinsert the SD card. In Tide, from the menu, choose
+
+- Mac: **Tide** > **Tingbot WiFi Settings...**
+- Win/Linux : **File** > **Tingbot WiFi Settings...**
+
+For instance on the Mac:
 
 ![image](images/TingbotGuide024.png)
 
-> **Aside:**
+<!--
+> **Note**
 > If the Tingbot OS SD card isn't inserted you may get the following prompt:
->![image](images/TingbotGuide045.png)
+>
+> ![image](images/TingbotGuide045.png)
+> You might have to remove and then reinsert the SD card. 
+-->
 
 Now enter the SSID name and password in the pop-up window:
 ![image](images/TingbotGuide048.png)
 
 and when saved to the SD card the following confirmation will be given:
 ![image](images/TingbotGuide046.png)
+
 ### Time to get coding!
-It's now time to get coding so please now eject the Tingbot OS SD card, insert the micro SD card into the Tingbot and plug in the Tingbot power supply. As this is the first time the SD card has been used the Tingbot it will go through a partial boot up sequence to expand the image to the full capacity of the SD card. Once the image has been expanded the Tingbot will automatically reboot - this time into Springboard - the Tingbot's UI.
+
+Eject the Tingbot OS SD card, insert the micro SD card into the Tingbot and plug in the Tingbot power supply.
+
+As this is the first time the SD card has been used the Tingbot it will go through a partial boot up sequence to expand the image to the full capacity of the SD card. Once the image has been expanded the Tingbot will automatically reboot - this time to the Home screen - the Tingbot's UI.
 
 Using Tide
 ----------
+
 ### Save as... (and Run)
+
 The first thing to do is to use File -&gt; Save As... (or File -&gt; Save) to save the Untitled template Tingbot application as, say, a file named hello.tingapp. Now 'Run' the program in the Tingbot simulator and the simulated Tingbot will pop up!
 ![image](images/TingbotGuide065.png)
 
 ### The real ting!
+
 At this point we're sure that you'd like to run the app on the actual Tingbot. Nothing could be simpler! If your Tingbot is booted up then it should be showing the first screen of Springboard. If so all is well. If not, please check back over the previous instructions. If the Tingbot has been able to connect to WiFi then the Tide application should have detected it and the Tingbot's local IP address will appear in the top right hand menu. For instance:  
 ![image](images/TingbotGuide059.png)
 
-Now select the real Tingbot rather than the simulator and once this is done notice that the Download button is now activated. Clicking on this button will cause hello.tingapp to be downloaded to the Tingbot. 
-![image](images/TingbotGuide062.png)
-> **Aside:**
-> Scrolling through Springboard will show the newly installed application as 'Untitled' but we'll explain why later.
-> If you have scrolled to Untitled you can start it by tapping its screen icon.
+Let's do this. Select the real Tingbot rather than the simulator and press the Run button again.
 
-When developing code it is often more convenient to wrap the download and run into one step. That's what the Run button achieves and clicking on this will download the app and start it running on the Tingbot. The following screenshot shows this. Note that the button icon changes from 'play' to 'stop' when the app has been started by this method:
 ![image](images/TingbotGuide063.png)
 
+In the _console_ at the bottom you'll see the app get copied and started on the Tingbot. Check your Tingbot - it should be saying hello! Hold the two middle buttons on the Tingbot together to return to the home screen.
+
+By using the Run button you can test apps without installing them. Once you're happy with an app, you can install it using the Upload button. Try it! Select the real Tingbot rather than the simulator and notice that the Upload button is enabled. Clicking on this button will cause your app to be uploaded to the Tingbot.
+
+![image](images/TingbotGuide062.png)
+
+> **Note**
+> Scrolling through Springboard will show the newly installed application as 'hello.tingbot' but we'll explain why later.
+> If you have scrolled to hello.tingapp you can start it by tapping its screen icon.
+
 ### One last Ting!
-The reason that the Hello app shows up in Springboard as 'Untitled' is because the app.tbinfo has not been updated by the programmer. The first screenshot below shows the default app.tbinfo settings (and active 'Stop' button) and the second screenshot shows an updated app.tbinfo (and active 'Play' and 'Download' buttons showing that the app has been stopped in preparation for an update and re-run).
-![image](images/TingbotGuide066.png)
-![image](images/TingbotGuide067.png)
 
-Now it's time to explain the process of writing your first Tingbot app. This comes next!
+The reason that the Hello app shows up in Springboard as 'hello.tingapp' is because the [app.tbinfo](/reference/tingapp-format/#tbinfo) has not been updated by the programmer. You can fill in the app.tbinfo like so:
 
+![image](images/TingbotGuide068.png)
+
+Next up, we'll [explain the process of writing your first Tingbot app](/guides/first-app/).
