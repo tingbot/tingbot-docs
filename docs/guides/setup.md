@@ -5,7 +5,7 @@ By using Tingbot and Tide you agree with our [terms and conditions](http://tingb
 Introduction
 ============
 
-Your Tingbot is assembled and ready to go.
+You've followed the [assembly instructions](tingbot-assembly-instructions-v1.pdf), your Tingbot is assembled and ready to go.
 
 During this guide we'll:
 
