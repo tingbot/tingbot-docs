@@ -1,9 +1,18 @@
 /* GLOBAL */
 
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
 html {
 	font-size: 100%;
 }
 
+h3, h4, h5, h6 {
+	color: inherit;
+}
+
+pre {
+	font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+}
 /* NAV BAR STYLES */
 
 body, .wy-nav-side {
@@ -16,16 +25,13 @@ body, .wy-nav-side {
 	background: transparent;
 }
 
-.wy-side-nav-search:before {
-	background-image: url(images/logo-black.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	content: "";
+.wy-side-nav-search img.big-logo {
 	display: block;
-	width: 80%;
-	height: 50px;
+	width: 70%;
+	height: auto;
 	margin: 20px auto;
+	background-color: transparent;
+	border-radius: 0;
 }
 
 .wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
@@ -73,6 +79,10 @@ body, .wy-nav-side {
 
 .wy-menu-vertical li.current ul li a {
 	padding-left: 3.5em;
+}
+
+.wy-menu-vertical li.current ul li a.toctree-l4 {
+	padding-left: 5em;
 }
 
 .wy-menu-vertical li.current a {
