@@ -10,9 +10,15 @@ Here you'll find all the information you'll need to build your Tingbot and get s
 
 ## Get in touch!
 
+<!-- 
 ### [Tingbot Forum <i class="fa fa-comment" aria-hidden="true"></i>](http://forum.tingbot.com)
 
 [The forum](http://forum.tingbot.com) is a great place to ask for help when you're getting started. Ask your questions here so they can be picked up by Google!
+ -->
+
+### [Twitter <i class="fa fa-twitter" aria-hidden="true"></i>](http://twitter.com/thetingbot)
+
+Tweet us on twitter if you've got any quick questions.
 
 ### [Tingbot Slack <i class="fa fa-slack" aria-hidden="true"></i>](http://slack.tingbot.com)
 
@@ -25,5 +31,5 @@ All Tingbot software is liberal licensed, open source.
 Want to contribute to the software? Want to file a bug in one of our projects?
 
 - [tingbot-python](https://github.com/tingbot/tingbot-python) (the Python libraries)
-- [tide-electron](https://github.com/tingbot/tingbot-python) (the Tide IDE application)
+- [tide-electron](https://github.com/tingbot/tide-electron) (the Tide IDE application)
 - [tingbot-os](https://github.com/tingbot/tingbot-os) (the Tingbot operating system)
