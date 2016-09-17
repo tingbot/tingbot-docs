@@ -71,7 +71,7 @@
             
                 <li class="toctree-l3"><a href="#tide">Tide</a></li>
                 
-                    <li><a class="toctree-l4" href="#download-latest-version-wzxhzdk1wzxhzdk2">Download latest version </a></li>
+                    <li><a class="toctree-l4" href="#download-wzxhzdk2wzxhzdk3">Download </a></li>
                 
                     <li><a class="toctree-l4" href="#contributing">Contributing</a></li>
                 
@@ -153,13 +153,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../links/forum/">Forum</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../links/ocean/">Tingbot Ocean</a>
         
     </li>
@@ -214,19 +207,17 @@
                 <h1 id="tide">Tide</h1>
 <p>Tide is the IDE for Tingbot.</p>
 <p><img alt="" src="../images/tide-header.png" /></p>
-<h2 id="download-latest-version-wzxhzdk1wzxhzdk2">Download latest version <span class="js-tide-version"></span></h2>
-<!--
+<h2 id="download-wzxhzdk2wzxhzdk3">Download <span class="js-tide-version"></span></h2>
 <script>
     $.ajax({
         url: 'https://api.github.com/repos/tingbot/tide-electron/releases/latest',
-        dataType: 'xml',
-        success: function (xmlDocument) {
-            var version = xmlDoc.getElementsByTagName("entry")[0].getElementsByTagName("title")[0].nodeValue;
+        dataType: 'json',
+        success: function (release) {
+            var version = release.name;
             $('.js-tide-version').text(version);
         }
     });
 </script>
- -->
 
 <table>
     <thead>
