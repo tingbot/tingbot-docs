@@ -2,12 +2,6 @@ By using Tingbot and Tide you agree with our [terms and conditions](http://tingb
 
 ![](images/setup-header.png)
 
----
-
-**NOTE**: We're seeing some reports that the built-in Wifi on the Raspberry Pi 3 isn't working automatically on Tingbot OS. If you have a Pi3, you might have trouble connecting to the Tingbot using Tide. We're working on a fix now. More info: [https://github.com/tingbot/tingbot-os/issues/21](https://github.com/tingbot/tingbot-os/issues/21)
-
----
-
 Introduction
 ============
 
