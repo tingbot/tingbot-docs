@@ -112,31 +112,31 @@ It couldn't be simpler to use this in-built touch feature of Tingbot to create a
 
 > **Aside:**
 > It would be convenient to have the ability to clear the screen between doodles. Using our new-found knowledge of button events this could be done by simply adding, for example:
-
-    @left_button.hold
-    def clear():
-        screen.fill(color='white')
-
+> 
+>     @left_button.hold
+>     def clear():
+>         screen.fill(color='white')
+> 
 > to give our new and improved version:
-
-    import tingbot
-    from tingbot import *
-
-    screen.fill(color='white')
-
-    @left_button.hold
-    def clear():
-        screen.fill(color='white')
-
-    @touch()
-    def on_touch(xy):
-        screen.rectangle(
-            xy=xy,
-            size=(5, 5),
-            color='blue')
-
-    tingbot.run()
-
+>
+>     import tingbot
+>     from tingbot import *
+> 
+>     screen.fill(color='white')
+> 
+>     @left_button.hold
+>     def clear():
+>         screen.fill(color='white')
+> 
+>     @touch()
+>     def on_touch(xy):
+>         screen.rectangle(
+>             xy=xy,
+>             size=(5, 5),
+>             color='blue')
+> 
+>     tingbot.run()
+>
 > Try it and see!
 
 Smooth!
