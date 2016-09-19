@@ -1,7 +1,7 @@
 Buttons
 =======
 
-If the version of Tide you installed is one that includes button examples then these can be selected from the **File -&gt; Examples** menu. For instance:
+Tide includes some handy examples that can be selected from the **File -&gt; Examples** menu. For instance:
 
 ![image](images/TingbotBT001.png)
 
@@ -80,11 +80,11 @@ Now let's move on to a slightly more animated example that shows all four types 
 
     tingbot.run()
 
-When the above is run the screen contents will continually scroll from right to left. A vertical line - a 1-pixel wide by 240 pixels high rectangle the same colour as the screen background - is 'inserted at the right hand side of the screen to fill the 'gap' made by moving the contents of the screen one pixel to the left. This is a simple way to 'animate' the display. The following screenshot of the Tingbot simulator captures one frame of the action.
+When the above is run the screen contents will continually scroll from right to left. A vertical line - a 1-pixel wide by 240 pixels high rectangle the same colour as the screen background - is 'inserted at the right hand side of the screen to fill the 'gap' made by moving the contents of the screen one pixel to the left. This is a simple way to 'animate' the display. 
 
  ![image](images/TingbotBT008.png)
 
-Of course the best way to fully understand what's going on is to run this **More buttons** example for yourself!
+Check the [tingbot-python buttons](https://tingbot-python.readthedocs.io/en/latest/buttons.html) documentation for more info on what can be done with buttons.
 
 Touch
 =====
@@ -182,3 +182,4 @@ The difference is quite striking when compared side-by-side as you can see in th
 > **Aside:**
 > The technique shown above is, strictly speaking, interpolation rather than smoothing but we couldn't resist (no pun intended) the chance to use **Smooth!** as a heading ;)
 
+Check the [tingbot-python touch](https://tingbot-python.readthedocs.io/en/latest/touch.html) documentation to see how to react to touch events only within a certain area.
