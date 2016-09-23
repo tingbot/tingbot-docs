@@ -8,6 +8,8 @@ Here you'll find all the information you'll need to build your Tingbot and get s
 
 🔩 Looking for information on our Python libraries? [tingbot-python reference](/links/tingbot-python-docs/)
 
+🌊 Check out other apps made by the community at [The Tingbot Ocean](http://ocean.tingbot.com)
+
 ## Get in touch!
 
 <!-- 
