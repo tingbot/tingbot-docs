@@ -226,7 +226,7 @@
 <p>Create an account at GitHub by going to <a href="http://github.com">github.com</a>, clicking the 'Sign up' button, and follow the instructions.</p>
 <p>Once you've got an account, click the ➕ button in the top right and choose 'New repository'.</p>
 <blockquote>
-<p><em>Note</em></p>
+<p><strong>Note</strong></p>
 <p>A repository (or 'repo' for short) is where your code lives. Git repositories also keep track of every change in your code, so you can make changes without worrying that you might break something!</p>
 </blockquote>
 <ul>
@@ -242,18 +242,30 @@
 <p>All set? Hit the big green button!</p>
 <p>On the next screen, you'll see your new repository. Copy your Git URL from the 'Clone or download' button.</p>
 <p><img alt="" src="../images/publishing-clone.png" /></p>
-<p>Now open a terminal ('Git Bash' on Windows) and type</p>
+<p>Now open a terminal ('Git Bash' on Windows).</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>You can now choose where to put the repository on your hard disk. Type <code>cd</code> to go
+to your home folder, do <code>ls</code> (<code>dir</code> on Windows) to look at what's here, and type <code>cd &lt;folder&gt;</code>
+to move around.</p>
+</blockquote>
+<p>Next, pull the repository down by typing:</p>
 <pre><code>git clone &lt;paste your git URL here&gt;
 </code></pre>
 <p>Git will download your repo, into a folder with the name you chose earlier. Now you can add your app, by copying it into the folder that was created.</p>
-<p>Finally, we can push it to GitHub. Go back to the terminal and type:</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>If you're confused where your repo is, type <code>open .</code> on Mac, <code>explorer .</code> on Windows or
+<code>nautilus .</code> on Linux to open the folder in a file browser.</p>
+</blockquote>
+<p>Once you've copied you files into the repo, we can push it to GitHub. Go back to the terminal and type:</p>
 <pre><code>cd &lt;your repo name&gt;
 git add .
 git status
 </code></pre>
 <p>Git will output a list of files that are going to be added. Give it a look over and make sure there's nothing there you don't want to publish. If there is anything, remove the files and do <code>git add .</code> again.</p>
 <p>Finally, to push to GitHub, type</p>
-<pre><code>git commit
+<pre><code>git commit -m "Initial commit"
 git push
 </code></pre>
 <p>Check your repo page on GitHub, you should see your app appear!</p>
