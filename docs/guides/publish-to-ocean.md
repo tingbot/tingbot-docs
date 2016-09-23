@@ -25,7 +25,7 @@ Create an account at GitHub by going to [github.com](http://github.com), clickin
 
 Once you've got an account, click the ➕ button in the top right and choose 'New repository'.
 
-> *Note*
+> **Note**
 >
 > A repository (or 'repo' for short) is where your code lives. Git repositories also keep track of every change in your code, so you can make changes without worrying that you might break something!
 
@@ -46,13 +46,26 @@ On the next screen, you'll see your new repository. Copy your Git URL from the '
 
 ![](images/publishing-clone.png)
 
-Now open a terminal ('Git Bash' on Windows) and type
+Now open a terminal ('Git Bash' on Windows).
+
+> **Note**
+>
+> You can now choose where to put the repository on your hard disk. Type `cd` to go
+> to your home folder, do `ls` (`dir` on Windows) to look at what's here, and type `cd <folder>`
+> to move around.
+
+Next, pull the repository down by typing:
 
     git clone <paste your git URL here>
 
 Git will download your repo, into a folder with the name you chose earlier. Now you can add your app, by copying it into the folder that was created.
 
-Finally, we can push it to GitHub. Go back to the terminal and type:
+> **Note**
+>
+> If you're confused where your repo is, type `open .` on Mac, `explorer .` on Windows or
+> `nautilus .` on Linux to open the folder in a file browser.
+
+Once you've copied you files into the repo, we can push it to GitHub. Go back to the terminal and type:
 
     cd <your repo name>
     git add .
@@ -62,7 +75,7 @@ Git will output a list of files that are going to be added. Give it a look over 
 
 Finally, to push to GitHub, type
 
-    git commit
+    git commit -m "Initial commit"
     git push
 
 Check your repo page on GitHub, you should see your app appear!
