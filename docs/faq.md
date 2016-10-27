@@ -80,17 +80,17 @@
         }
     }
 
-    function openTargettedQuestion() {
+    function openTargetedQuestion() {
         $('.open').removeClass('open').each(updateCaret);
 
         $(location.hash).addClass('open');
         updateCaret($(location.hash)[0]);
     }
 
-    window.addEventListener("hashchange", openTargettedQuestion, false);
+    window.addEventListener("hashchange", openTargetedQuestion, false);
 
     if (location.hash) {
-        openTargettedQuestion();
+        openTargetedQuestion();
     }
 
     $('h3').click(function () {
