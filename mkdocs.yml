@@ -3,6 +3,9 @@ repo_url: https://github.com/tingbot/tingbot-docs/
 theme: readthedocs
 extra_css: [extra.css]
 extra_javascript: [extra.js]
+markdown_extensions:
+    - toc
+    - admonition
 pages:
 - Home: 'index.md'
 - Tide: 'tide.md'
