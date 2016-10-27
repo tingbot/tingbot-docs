@@ -9,6 +9,7 @@ markdown_extensions:
 pages:
 - Home: 'index.md'
 - Tide: 'tide.md'
+- FAQs: 'faq.md'
 - User Guide:
     - 'Setting up Tingbot': 'guides/setup.md'
     - 'Writing your first app': 'guides/first-app.md'
