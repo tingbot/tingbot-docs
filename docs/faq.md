@@ -1,4 +1,6 @@
-# Hardware
+# Frequently asked questions
+
+## Hardware
 
 ### What power supply should I use with my Tingbot?
 
