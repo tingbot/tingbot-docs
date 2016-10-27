@@ -18,6 +18,10 @@ To run locally, do-
 mkdocs serve
 ```
 
+## Deployment
+
+Deployment to docs.tingbot.com is automatic from the master branch, using [Read the Docs](http://readthedocs.org/).
+
 ## Contributing
 
 Pull requests welcome.
