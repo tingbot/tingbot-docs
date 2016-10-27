@@ -23,7 +23,7 @@
 
     A symptom of a failure to boot is a screen that remains white for longer than the 10 seconds it takes the boot sequence to load the device driver for the screen and start to display the boot sequence output.
 
-    A common reason for Tide OS failing to boot is the fact that the SD card has not been imaged properly. Please refer back to <insert the set up guide link here> to make sure that it’s not the SD card image at fault.
+    A common reason for Tide OS failing to boot is the fact that the SD card has not been imaged properly. Please refer back to [the setup guide](guides/setup/) to make sure that it’s not the SD card image at fault.
 
     If the SD card has been properly set up and the screen is still remaining blank then another likely culprit is a power supply that can’t cope with the power requirements of the Pi + screen.
 
