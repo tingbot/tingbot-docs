@@ -5,7 +5,10 @@
 ### What power supply should I use with my Tingbot?
 
 !!! answer
-    We suggest using one of the official Raspberry Pi PSU’s that's rated 2.5A. If you are using a different power supply that has a lower Amp level, you may experience white screens on the Tingbot module. This indicates there may be a lack of power to fully power the Tingbot. 
+    We suggest using one of the official Raspberry Pi PSU’s that's rated
+    2.5A. If you are using a different power supply that has a lower Amp
+    level, you may experience white screens on the Tingbot module. This
+    indicates there may be a lack of power to fully power the Tingbot. 
 
 ### Nothing appears on the screen
 
