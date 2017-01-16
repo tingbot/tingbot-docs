@@ -1,3 +1,13 @@
+<style>
+    /* make the 'support' supernav button highlighted */
+    .supernav-item-docs {
+        background-color: transparent;
+    }
+    .supernav-item-support {
+        background-color: #f3f3f3;
+    }
+</style>
+
 # Frequently asked questions
 
 ## Hardware
