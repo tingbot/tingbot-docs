@@ -24,6 +24,30 @@ body, .wy-nav-side {
 	background: #ebebeb;
 }
 
+/* SUPERNAV */
+
+.supernav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  color: #ff0046;
+  border-bottom: 1px solid #eee;
+}
+.supernav-item-docs {
+	background-color: #f3f3f3;
+}
+@media screen and (max-width: 768px) {
+  .wy-nav-content-wrap.shift {
+    top: 46px;
+  }
+}
+nav.stickynav {
+  padding-top: 66px;
+}
+
 /* NAV TOP SECTION */
 
 .wy-side-nav-search {
