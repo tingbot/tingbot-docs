@@ -5,9 +5,9 @@ By using Tingbot and Tide you agree with our [terms and conditions](http://tingb
 Introduction
 ============
 
-You've followed the [assembly instructions](tingbot-assembly-instructions-v2.pdf), your Tingbot is assembled and ready to go.
+You've followed the [assembly instructions](tingbot-assembly-instructions-v3.pdf), your Tingbot is assembled and ready to go.
 
-Make sure your wiring matches [this diagram](http://i.imgur.com/DYWuEgB.jpg) before you continue. If in doubt, go back and double-check.
+> If you have the 2016 version of Tingbot (in the brown box), use these [assembly instructions](tingbot-assembly-instructions-v2.pdf). Make sure your wiring matches [this diagram](http://i.imgur.com/DYWuEgB.jpg) before you continue. If in doubt, go back and double-check.
 
 During this guide we'll:
 
