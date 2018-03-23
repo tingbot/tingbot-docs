@@ -57,17 +57,9 @@
 
     Hint: There is slight possibility that, during the routing of the ribbon cable and the positioning of the screen and button board in the plastic end pieces, tension on the wires may have pulled some cable(s) out of the right-angle connector so please check - visually - for this before ‘wrapping’ the case. Further hint: Don’t wrap the case before booting up the Tingbot for the first time and using the buttons to make sure the wiring is OK.
 
-## Software
-### TBA
-
 ## Miscellaneous
 
 ### Can Tingbot be used with Emulation Station?
-
-!!! answer
-    Yes. See [How is Tingbot configured to use Emulation Station](#how-is-tingbot-configured-to-use-emulation-station).
-
-### How is Tingbot configured to use Emulation Station?
 
 !!! answer
     The first part of this tutorial refers mainly to the [First Installation · RetroPie/RetroPie-Setup Wiki](https://github.com/retropie/retropie-setup/wiki/First-Installation) instructions. Note: the recommendation is that setting up and configuring a standard Retropie installation is best done with a Raspberry Pi connected to an HDMI monitor. Once the standard installation is done we will explain how to configure Retropie to use a Tingbot's screen.
@@ -121,12 +113,21 @@
 ### Can Tingbot be used with Raspbian?
 
 !!! answer
-    Yes. See [How is Tingbot configured to use Raspbian](#how-is-tingbot-configured-to-use-raspbian).
+    The Tingbot OS is based on Raspbian, so you might have some success starting there and then disabling the services by SSHing in and using the commands:
 
-### How is Tingbot configured to use Raspbian?
+        systemctl disable tbprocessd
+        systemctl disable tbbuttonsd
+        systemctl disable tbwifisetup
+        systemctl enable getty@tty1
 
-!!! answer
-    Details to follow.
+    Otherwise, if starting from plain Raspbian, you can install the display driver [tingbot-overlay.dtb](https://github.com/tingbot/tingbot-os/blob/master/root/opt/tingbot-os/tingbot-overlay.dtb) into `/boot/overlays` and enable it by adding the lines `dtparam=spi=on` and `dtoverlay=tingbot:xohms=80` to `/boot/config.txt`. You'll also probably want to change the default console to `/dev/fb1` - you can do this by adding `fbcon=map:10` to `/boot/cmdline.txt`.
+
+    Check the [deb install script](https://github.com/tingbot/tingbot-os/blob/master/root/DEBIAN/postinst) at  for all the steps that happen that turn Raspbian into Tingbot OS.
+
+    For the buttons, they are just wired into GPIO pins on the Pi, so you can access them from e.g. wiringpi or RPi.GPIO libraries. [See here for the pin numbers](https://github.com/tingbot/tingbot-python/blob/master/tingbot/platform_specific/tingbot.py#L40).
+
+    For more info on using a frame buffer screen on Raspbian, check out [Notro's great guide](https://github.com/notro/fbtft/wiki/Framebuffer-use).
+
 
 <style>
     .admonition.answer .admonition-title {
